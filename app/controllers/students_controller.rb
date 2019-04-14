@@ -5,7 +5,6 @@ class StudentsController < ApplicationController
   
   def new 
     @student = Student.new
-    redirect_to students_path(@student)
   end
   
   def show 
