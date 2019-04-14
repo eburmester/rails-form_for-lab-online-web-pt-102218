@@ -1,3 +1,9 @@
 class EditSchoolClassesTable < ActiveRecord::Migration
   def change 
-    drop_table 
+    create_table :school_classes do |t|
+      t.string :title 
+      t.string :description 
+      
+    end 
+  end 
+end
