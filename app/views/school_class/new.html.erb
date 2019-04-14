@@ -1,6 +1,6 @@
 <%= form_for(@new_school_class_path) do |f| %>
   <label>Title:</label><br>
-  <%= text_field_tag :school_class_title %><br>
+  <%= f.text_field :school_class_title %><br>
 
   <label>Room Number</label><br>
   <%= text_area_tag :school_class_room_number %><br>
