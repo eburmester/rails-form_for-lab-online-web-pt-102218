@@ -5,7 +5,6 @@ class StudentsController < ApplicationController
   
   def new 
     @student = Student.new
-    redirect_to Student.last
   end
   
   def show 
@@ -17,7 +16,7 @@ class StudentsController < ApplicationController
     @student.first_name = params[:first_name]
     @student.last_name = params[:last_name]
     @student.save 
-    redirect_to students_path(@student)
+    redirect_to students_path(Student.last)
   end
   
   def edit 
