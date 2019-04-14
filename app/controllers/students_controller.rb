@@ -13,6 +13,7 @@ class StudentsController < ApplicationController
   
   def create 
     @student = Students.create(params)
+    @student.
     @student.save 
     redirect_to students_path(@student)
   end
